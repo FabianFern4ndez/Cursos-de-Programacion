@@ -1,0 +1,3 @@
+1. que estilo de escritura se utiliza para definir variables
+2. puedo hacer los procesos y la salida en la misma seccion
+3. como hago si en el problema 2, hay personas de la misma edad
