@@ -1,0 +1,66 @@
+\documentclass[]{article}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%Establecer margen superior
+\geometry{top = 0.5cm}
+
+%opening
+\title{Investigación de Estructuras Discretas}
+\author{Fabián Fernández E-8-196729   \,\,\,Grupo:1IL122}
+\date{16 de abril del 2024}
+
+\begin{document}
+	
+	\maketitle
+	\section*{Conceptos claves}
+	Un conjunto A es infinito numerable si $\left| A \right| = \left| \mathbb{N}\right|$ , esto significa que existe un función biyectiva tal que $f: \mathbb{N} \rightarrow A$ .\\\\
+	Una función biyectiva se define como aquella función que es inyectiva y sobreyectiva al mismo tiempo. Esto es que todos los elementos del dominio tienen una y solo una imagen distinta en el codominio. Formalmente lo definimos como: \\
+	Dada una $f: X \rightarrow Y $ , se cumple que $\forall y \in Y \,\, ,\,\, \exists!x \in X : f(x) = y$
+	
+	
+	\section*{$\mathbb{R}$ no es un conjunto infinito numerable}
+	Demostración por reducción al absurdo: Asumimos que $\mathbb{R}$ es infinito numerable $\Rightarrow$ que cada subconjunto de $\mathbb{R}$ es numerable. Tomamos por ejemplo el intervalo abierto (0,1), supuestamente numerable. Entonces $\exists f:\mathbb{N} \rightarrow (0,1)$\\\\
+	Tomemos por ejemplo desde:\\
+	$1\rightarrow a_1 = 0,a_{11}a_{12}a_{13}a_{14} \,\, hasta\,\,4\rightarrow a_4 =0, a_{41}a_{42}a_{43}a_{44}$,\\como vemos $\forall a_n \in (0,1),  \exists n \in \mathbb{N} : f(n) = a_n$. La clave para llegar a la contradicción se basa en encontrar un número el cual f(n) $\neq a_n$. Para ello nos vamos a concentrar en la diagonal formada por los números $a_{ii}$ es decir $a_{11}$ , $a_{22}$ , $a_{33}$, $a_{44}$.
+	\\\\
+	Vamos a crear nuestro número $b_i$ con la siguiente definición: \[
+	b_i =
+	\begin{cases}
+		1 & \text{si } a_{ii} \neq 1 \\
+		9 & \text{si } a_{ii} = 1
+	\end{cases}
+	\]
+	Entonces el número $a'_n = 0,b_1b_2b_3b_4$ va a pertenecer al intervalo (0,1) pero a cada valor que le asignemos a $a_{ii}$ nuetro $a'_n$ será diferente. Formalmente $a'_n \in (0,1)$ pero $\nexists n \in \mathbb{N}$ tal que $f(n) = a'_n$. Concluimos que nuestro intervalo (0,1) no es numerable. Y como existe al menos un intervalo en $\mathbb{R}$ no numerable, el conjunto en su totalidad no es numerable.
+	
+	\section*{$\mathbb{I}$ no es un conjunto infinito numerable}
+Para esta demostración necesitamos saber que $\mathbb{Q}$ es un conjunto infinito numerable y la unión de dos conjuntos numerables nos da como resultado un conjunto numerable. Esto no se demostrará aquí por falta de espacio.\\\\
+Procedemos una vez más por reducción al absurdo\\
+Por definición $\mathbb{I}$ es $\mathbb{R} - \mathbb{Q}$ ahora bien, si $\mathbb{I}$ es numerable, y $\mathbb{Q}$ es numerable, su unión debería ser, por propiedad un conjunto numerable.\\\\
+Al efectuar esta unión $(\mathbb{R} - \mathbb{Q})$	$\cup$ $\mathbb{Q} = \mathbb{R}$, obtuvimos como resultado a los números Reales, como demostramos anteriormente $\mathbb{R}$ no es numerable, por tanto se contradice la asunción inicial y $\mathbb{I}$ pasa a ser un conjunto infinito no numerable.
+\\\\\\\
+\section*{$P(\mathbb{Z})$ no es un conjunto infinito numerable}
+Para demostrar esta afirmación es conveniente demostrar primero un teorema que nos dice que dado un conjunto A, no se puede establecer una biyección con su conjunto potencia. Al aplicar este teorema vemos que $\mathbb{N}$ $\nsim$ P($\mathbb{N}$) y por definición, al no poder aplicar la biyección con $\mathbb{N}$, $\Rightarrow$ P($\mathbb{N}$) no es numerable. Y como $\mathbb{N}$ $\subset$ $\mathbb{Z}$ $\Rightarrow$ que P($\mathbb{Z}$) tampoco es numerable.\\\\
+Demostración de A $\nsim$ P(A):\\ 
+Caso 1 A = \{{$\emptyset$}\}\\
+Si pasa esto entonces $\left|P(A)\right|$ = 1 y $\left|A\right|$ = 0, como los conjuntos tienen diferente cardinal no se puede establecer biyección(uno a uno).\\\\
+Caso 2: A $\neq$ \{$\emptyset$\}\\
+Por reducción al absurdo, supongamos que podemos establecer la biyección A $\sim$ P(A). Entonces podemos obtener una funcion $f: A \rightarrow P(A)$.\\\\ Ahora definimos un conjunto de este modo D=\{a $\in$ A : a $\notin$ f(a)\}. Es vital la parte donde dice que la imagen no puede estar en el mismo conjunto de su elemento. Claramente D $\subseteq$ A, pero recordemos que P(A), es el conjunto de los subconjuntos de A, por tanto D $\in$ P(A). Entonces podemos escoger un elemento que nos servirá de contraejemplo, llamemoslo x : x $\in$ A $\land $ f(x) $\in$ D. \\\\
+Ahora nos preguntamos ¿x $\in$ D?\\
+Si x $\in$ D $\Rightarrow$ f(x) $\in$ D. Pero esto contradice la construcción del conjunto D, que nos dice que el argumento y su imagen no pueden estar los dos en D.\\
+¿Entonces x $\notin$ D?\\
+Si x $\notin$ D aun queda que f(x) $\in$  D, lo cual encaja con todos los parámetros del conjunto D, conviertiendo a x en un elemento de D.
+
+\section*{Bibliografía}
+S. Epp, S. (2012). Matemáticas Discretas con Aplicaciones (4.a ed.). CENGAGE Learning. \\\\
+mate A. (2019, 30 octubre). El conjunto de los números reales no es numerable (Demostración) [Vídeo]. YouTube. https://www.youtube.com/watch?v=KE2v5j6TS4I\\\\
+mate A. (2019b, octubre 31). El conjunto de los números irracionales no es numerable (Demostración) [Vídeo]. YouTube. https://www.youtube.com/watch?v=oYS0Rpf-neE
+
+
+
+
+
+
+\end{document}
+
+

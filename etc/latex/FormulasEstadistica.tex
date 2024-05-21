@@ -1,0 +1,63 @@
+\documentclass[14pt]{extarticle}
+\usepackage{geometry}
+
+%Establecer margen superior
+\geometry{top = 0.5cm}
+
+%opening
+\title{Tarea de Matemática Discreta}
+\author{Fabián Fernández E-8-196729   \,\,\,Grupo:1IL122}
+\date{26 de Marzo del 2024}
+
+\begin{document}
+	\section*{}
+	
+	\section*{\centering Medidas de Tendencia Central}
+	
+	\section*{\\ \normalsize Datos no agrupados }
+	Promedio o Media: Suma de datos/cantidad.\\\\
+	Mediana: Ordenar datos y seleccionar el del medio, si la cantidad es par, hacer media de los dos centros.\\\\
+	Moda: Valor que más se repite.
+	
+	\section*{\normalsize Datos Agrupados Continuos}
+	Promedio = $\frac{\sum_{i}^{k} C_i n_i}{n}$ \\\\
+	Mediana = $a_i + \frac{n/2 - N_{i-1}}{n_i} \times A$   \\ tomando como referencia(i) el intervalo donde esté el primer $N_i > n/2$\\\\
+	Moda = $a_i + \frac{n_i - n_{i-1}}{(n_i - n_{i-1}) + (n_i - n_{i+1})} \times A$\\tomando como referencia(i) el intervalo con mayor $n_i$
+	
+
+	\section*{\normalsize Datos Agrupados Discretos}
+	Promedio = $\frac{\sum_{i}^{n} x_i n_i}{n}$ \\\\
+	Mediana si n/2 se encuentra en $N_i$ \\
+$M_e = \frac{x_i + x_{i+1}}{2}$ , tomando como referencia(i) el $N_i = n/2$ \\\\
+Mediana si n/2 NO se encuentra en $N_i$ \\
+$M_e$ será el primer valor de $x_i$ con $N_i > n/2$ \\\\
+Moda: categoría ($x_i$) con mayor $n_i$ \\\\\\\\\\\
+
+	\section*{\normalsize Cuartiles}
+	\section*{\normalsize Datos no Agrupados}
+	N:Numero total de datos; K: Cuartil (1,2,3); $Q_k$:Posicion del cuartil K\\
+	Si N es par $Q_k = K(\frac{N}{4})$\\
+	Si N es impar $Q_k = K(\frac{N+1}{4})$\\
+	Si el cuartil queda entre dos posiciones $Q_k = X_i + d \times (X_{i+1} - X_{i})$
+	
+	\section*{\normalsize Datos Agrupados}
+	Paso 1: Calcular Posicion del cuartil $Q_k$\\
+	Paso 2: Calcular el valor del cuartil
+	$Q_k = a_i + \frac{k(\frac{N}{4}) - N_{i-1}}{n_i} \times A$ \\
+	Tomando como referencia ai, es el intervalo inferior del primer $N_i > n/2$
+	\section*{\normalsize Deciles y Percentiles}
+	Se mantienen las ecuaciones de cuartiles, pero en vez de 4 ahora es 10 y 100 respectivamente\\\\
+	 $D_k = K(\frac{N}{10})$\\
+	 	$D_k = a_i + \frac{k(\frac{N}{10}) - N_{i-1}}{n_i} \times A$\\
+	 	$P_k = K(\frac{N}{100})$\\
+	 	$P_k = a_i + \frac{k(\frac{N}{100}) - N_{i-1}}{n_i} \times A$
+	
+	
+	
+
+	
+	
+	
+	
+	
+\end{document}

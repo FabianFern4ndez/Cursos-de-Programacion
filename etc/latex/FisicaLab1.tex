@@ -1,0 +1,41 @@
+\documentclass[14pt]{extarticle}
+\usepackage{geometry}
+
+%Establecer margen superior
+\geometry{top = 0.5cm}
+
+
+
+\begin{document}
+	\section*{}
+	
+	\section*{\centering Fórmulas Parcial 1 Laboratorio}
+	\section*{\\ \normalsize Teoría del Error }
+	1. Dispersion de x ($\delta x_i $) = $| x_i - \bar{x}|$ \\
+	2. Dispersión cuadrática de x $(\delta x_i)^2 = (| x_i - \bar{x}|)^2$\\
+	3. Promedio ($\bar{x}$) = $\frac{\sum x_i}{n}$ \\
+	4. Dispersión Media ($\bar{\delta x}$) = $\frac{\sum \delta x_i}{n}$ \\
+	5. Desviación cuadrática media($\bar{\delta x}^2$) = $\frac{\sum (\delta x_i)^2}{n}$ \\
+	6. Desviación normal o estándar ($\sigma$) = $\sqrt{\frac{\sum (\delta x_i)^2}{n-1}}$\\
+	7. Desviación estándar de la media(incertidumbre): $\delta_x$ = $\frac{\sigma}{\sqrt{n}}$\\
+	8. Valor más probable de la medida: x = $\bar{x} + \delta_x$\\
+	9. Error relativo: $\epsilon_r = \frac{\delta_x}{\bar{x}}$\\
+	10.Error porcentual: $\epsilon_\% = \epsilon_r \times 100$
+	\section*{\normalsize Propagación del Error $x = \bar{x} + \delta_x$}
+	Caso suma(a + b)  $\Rightarrow$ x = $a + b \ \pm \sqrt{(\delta_a)^2 + (\delta_b})^2$ \\
+	Caso resta(a - b)  $\Rightarrow$ x = $a - b \ \pm \sqrt{(\delta_a)^2 + (\delta_b})^2 $ \\
+	Caso multiplicación (ab) $\Rightarrow x = ab \ \pm
+	\sqrt{(\frac{\delta_a}{a})^2 + (\frac{\delta_b}{b})^2} \times ab$ \\
+	Caso división (a/b)   $\Rightarrow x = \frac{a}{b} \ \pm
+	\sqrt{(\frac{\delta_a}{a})^2 + (\frac{\delta_b}{b})^2} \times \frac{a}{b}$ \\
+	Caso Potencia ($x^a y^b$) $\Rightarrow z = x^a y^b \ \pm
+	\sqrt{(a \frac{\delta_x}{x})^2 + (b\frac{\delta_y}{y})^2} \times x^a y^b $ 	
+	\section*{\normalsize Gráficas}
+	Función Potencial $y(x) = y_0x^m$ \\
+	Hallar pendiente: $ m = \frac{log(y_2) - log(y_1)}{log(x_2) - log(x_1)}$\\\\
+	Función Exponencial $y(x) = y_0e^{mx}$ \\
+	Hallar pendiente: $m = \frac{ln(y_2) - ln(y_1)}{x_2 - x_1}$\\\\
+	Para hallar $y_0$ despejar $y_0 = \frac{y}{e^{mx}}$ y reemplazar (x,y) con valor arbitrario\\
+	Para hallar $x = \frac{|ln(y_0) - ln(y)|}{m}$
+	
+\end{document}
