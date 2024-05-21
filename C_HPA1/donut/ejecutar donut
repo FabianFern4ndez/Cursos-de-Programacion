@@ -1,0 +1,1 @@
+gcc -o donut donut1.c -lm && ./donut
