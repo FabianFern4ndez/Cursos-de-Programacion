@@ -1,0 +1,40 @@
+html{
+    background-color:aquamarine;
+}
+
+h1{
+    text-align: center;
+}
+
+
+#pantalla{
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: black;
+    height: 100px;
+    width: 320px;
+    margin: auto;
+}
+
+section{
+    
+    text-align: center;
+    margin-top: 25px;
+  
+}
+
+.boton{
+    border-style: solid;
+    border-color: black;
+    height: 50px;
+    width: 75px;
+    font-size: 32px;   
+}
+
+#mas{
+    background-color: yellow;
+}
+
+#ac{
+    background-color:crimson;
+}

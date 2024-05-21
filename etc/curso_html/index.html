@@ -1,0 +1,284 @@
+<!---Esto es un comentario-->
+<!--Biblia de HTML y CSS https://developer.mozilla.org/es/  -->
+
+<!DOCTYPE html>
+<!---Doctype html le indica al navegador que tiene que renderizar
+html-->
+
+<html>
+    <head>
+        <!--La idea de head es poner metadatos que no se van a renderizar-->
+        <meta charset="utf-8"> <!--Esta linea indica la codificacion que debe usar para poner emojis o acentos-->
+       
+        <meta name="viewport" content="width=device-width"><!--Esta linea hace que la pagina se adapte al tamaño de la pantalla del dispositivo
+        para no tener problemas con telefonos, televisores, etc-->
+        
+        <title>Pagina de Fabian</title><!--nombre de la pagina que se ve en la pestaña del navegador-->
+         
+        <meta name="description" content="La primera pagina de Fabian :)"> <!--Es la descripcion que sale en el navegador debajo del nombre de la pagina-->
+        <link rel="icon" type="image/jpg" href="imagen.jpg"><!--icono de la pagina que se ve en la pestaña del navegador-->
+     
+         <!--Esta etiqueta ayuda para que google detecte si tienes la pagina traducida a otro idioma
+        y no lo cuente como duplicado-->
+        <link rel="alternate" href="https://midu.dev/en" hreflang="en-GB">
+        <!--Le indica a google que esta es la pagina principal para que no haya error en por ejemplo
+        www.midudev.dev y midudev.dev-->
+        <link rel="canonical" href="https://midu.dev">
+
+        <!--Style es para ponerle estilo a la pagina pero eso se ve con css-->
+
+
+
+
+
+        <link rel="stylesheet" href="style.css">
+        <!--Este link vincula nuestro html con css para no tener que editar todo en el mismo doc-->
+     
+        
+    </head>
+   
+
+
+<body> 
+     <!--
+        etiquetas que estamos usando para sustituir div
+        main 
+        header
+        nav
+        h1,2,3,4
+        aside
+        section
+        article
+        p
+        footer
+
+        dice que div lo puedes usar pero cuando no hay un significado de la seccion
+    -->
+
+    <!--body es para poner lo que se va a ver en pantalla-->
+  <main>
+    <header>
+<!---La etiqueta h1 se utiliza para titulos-->
+<!---La etiqueta es h1, la linea completa se le llama elemento-->
+<h1>Portafolio de Fabian </h1>
+<!---Para usar la extension de previsualizacion, clic derecho al archivo
+y le das a vista previa-->
+
+     <nav>
+        <!--La etiqueta a sirve para hacer enlaces internos y externos-->
+        <a class="link"  href="#experiencia">Experiencia</a>
+        <a class="link" href="#proyectos">Proyectos</a>
+        <a class="link" href="https://google.com">Google</a>
+        <!--al abrir el enlace de google nos saca de la pagina, para evitarlo se puede hacer lo siguiente-->
+        <a class="link" href="https://wikipedia.com"
+          target="_blank"
+          rel="noreferrer">Wiki</a>
+     </nav>
+    </header>
+
+<p>Estoy aprendiendo HTML con el curso de midudev. <strong>Viva el Betis.</strong>
+ Comentario fuera de lugar. </p>
+<!--La etiqueta <p> se utiliza para parrafos-->
+<!--La etiqueta <strong> se utiliza para resaltar-->
+
+<!--
+    <video controls src="https://www.youtube.com/watch?v=nvpLzmD6QyY"></video>
+    
+    <audio controls src="lorem ipsum"></audio>
+    
+    tendrias que tener el video descargado-->
+
+    <h2>Video de Presentación</h2>
+    <iframe src="https://www.youtube.com/watch?v=nvpLzmD6QyY" 
+    frameborder="0"
+    height="250"
+    width="250"
+    allow="accelerometer; autoplay; clipboard-write;
+    encrypted-media;gyroscope;picture-in-picture;web-share"
+    allowfullscreen
+    title="Youtube viedo"></iframe>
+
+    
+
+<h2 id="experiencia">Experiencia</h2>
+<!--Nota el id se le puso porque se quiere hacer un enlace con la etiqueta a desde nav y necesita un id
+para saber a donde dirigirse-->
+
+<!--La etiqueta <h2> es para titulo pero no principal asi sigues el orden h3 h4 etc-->
+
+<!--La etiqueta <ul> se utiliza para listas no ordenadas-->
+
+<ul>
+    <li>Cerro Viento</li>
+    <li>UTP</li>
+    <li>No me se la de chambear</li>
+
+</ul>    
+
+<!--En html hay tres tipos de elementos
+ los normales: los que usamos hasta ahora
+ los reemplazables: no tienen  y cierre
+sino que se reemplazan por algo multimedia como una imagen-->
+
+<img 
+alt="No cargué la imagen porque es muy grande, se arregla agregando la g al jpg"
+src="imagen.jpg"
+width="250"
+height="250">
+
+<!--La etiqueta img src="direccion/nombre de archivo"
+se usa para poner imagenes
+
+alt=" " sirve para agregar info si no se carga la imagen, al final la
+arregle
+
+width y height ajustan el tamaño-->
+
+<!--hay un atributo de img : loading="lazy" que hace que la imagen no se cargue hasta que el usuario no llegue a ella para ahorrar recursos-->
+
+<!--La etiqueta <input type= "algo"> permite la entrada de algo del usuario
+en forma de widget-->
+
+<!--Los comandos como src o type se llaman atributos-->
+
+
+
+     <h2 id="proyectos">Proyectos Realizados</h2>
+
+     <aside>
+        <header>
+            <h3>Tecnologías</h3>
+        </header>
+        <!--Ol es para listar numeradas-->
+        <ol>
+            <li>C</li>
+            <li>HTML</li>
+            <li>Autocad</li>
+        </ol>
+        <!--Todas las divisiones se pueden hacer con la etiqueta div pero segun midu esto no es bueno entonces hay que aprender a usar las otras etiquetas-->
+     </aside>
+
+     <section>
+        <article>
+            <header>
+                <h4>Sitio web corporativo</h4>
+            </header>
+            <p>
+                La verdad no se que escribir porque midu tiene un monton de mierda y yo no asi que Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit. Minus earum, deleniti possimus vel consequatur eligendi molestias 
+                unde accusantium commodi officia ducimus corporis voluptatum reprehenderit ex tempore repellat quod esse dolorum!
+            </p>
+            <footer>Saludos. Fabian</footer>
+        </article>
+     </section> 
+
+     <section>
+        <!--Esta seccion queria hacerla para descargar un pdf ez
+        etiqueta embed-->
+        <h2>Parcial 1 de HPA Temario</h2>
+        <a download href="Cap1.pdf">
+            <embed 
+            src="Cap1.pdf" 
+            type="pdf">
+        <button>    
+         Descargar Temario
+        </button>
+        </a>
+     </section>
+
+     <section>
+        <h2>Preguntas Frecuentes</h2>
+        <details>
+            <summary>Estudios</summary>
+            <p>Los Cursos de midudev</p>
+        </details>
+        <details>
+            <summary>Hobbies</summary>
+            <p>Dar pena tocando el violin</p>
+        </details>
+        <details>
+            <summary>Videojuegos</summary>
+            <p>El gta 6 cuando salga</p>
+        </details>
+     </section>
+
+     <section>
+        <head>
+            <h2>Formulario de Contacto</h2>
+        </head>
+
+        <form method="post" action="/curso_html/">
+
+        <fieldset>
+            <legend>Informacion personal </legend>
+            <div>
+            <label>Nombre: 
+            <input type="text" name="name" placeholder="llena el formulario :)" required>
+            </label>
+            </div>
+
+            <div>
+            <label> Email:
+            <input type="email" name="Email" required >
+            </label>
+            </div>
+
+                <div>
+                <label> telefono:
+                <input type="tel" name="telefono" required pattern="[0-9]{9}" >
+                </label>
+                </div>
+                <!--Es importante especificar bien el tipo-->
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
+            <label for="why">¿Por qué quieres contactar</label>
+             <select name="why" id="why">
+                <option value="1">Trabajo</option>
+                <option value="2">Preguntas</option>
+                <option value="3">Otros</option>
+             </select>
+
+             <div>
+                <datalist id="lenguajes">
+                    <option value="Javascript"></option>
+                    <option value="C"></option>
+                    <option value="Python"></option>
+                </datalist>
+                Con que lenguajes deseas trabajar:
+                <input list="lenguajes" name="lenguajes"> 
+             </div>
+
+
+             <div>
+             <label for="terms">Aceptas los términos</label>
+             <input type="checkbox"id="terms" name="terms" required>
+            </div>
+
+
+        </fieldset>
+        <input type="submit" value="Enviar Contacto">
+        <!--El boton tambien se podia haber hecho con <button>Enviar contacto <button>-->
+        </form>
+
+     </section>
+
+  </main> 
+  <footer>Copyright - 2023 DIJ</footer>       
+</body> 
+</html>
+
+<!--llegaste al 1.25.00-->
+<!--llegaste al 30 de css-->
+<!--Nota importante diferencia entre span y div
+si pones un span debajo de otro span no hay salto de linea
+con div si habria salto de linea
+ademas al div le puedes cambiar margenes
+height y width
+las etiquetas que se comportan como div se le llaman de bloque
+las de span se llaman de linea
+linea: span a stron
+bloque: div article section p h1234-->
+
+
+<!--llegaste a 1.34.00-->

@@ -1,0 +1,56 @@
+ul{
+    font-size: 32px;
+}
+article{
+    font-size: 32px;
+}
+
+/*El operador > se usa para aplicarle la caracteristicas
+a los contenidos de p relacionados directamente con article
+como el segundo parrafo esta en footer no le alcanza*/
+article > p {
+    color: blue;
+}
+
+section{
+    font-size: 32px;
+}
+
+/*El operador este aplica a los span si están después de p, muy complicado la verdad*/
+/*El operador + hace lo mismo pero solo aplica si esta justo despues y no hay nada intermedio*/
+p ~ span{
+    color: red;
+}
+
+/*El cabron se tiro 30 hora hablando de especificidad y fallback
+en resumen, css ejecuta sobreescribe las cosas, antepone lo mas especifico
+y si tienen la misma especificidad lo que este mas abajo
+*/
+
+/*Unidades de medida*/
+
+.container{
+    width: 250px; /*El pixel px :), los pixeles ya no tienen que ver con la computadora
+     si no es una medida de densidad para que sea la misma para todos los pc*/
+    height: 250px;
+    background-color: purple;
+}
+.container2{
+    width: 50vw;
+    height: 50vh;
+    background-color: crimson;
+    /*el vh y vw se usan como medida relativa a adaptable
+    a la pantalla
+    el 50 es un porcentaje*/
+}
+
+/*Importante diferenciar entre margin padding y border
+para hacer el cuento corto, supongamos que quieres definir el tamaño de una caja
+pues le pones height y width y listo no
+pues no
+porque el padding, el borde y el margen le van a afectar
+por defecto el navegador trae la opcion
+box-sizing:content box; lo que provoca este problema
+para arreglarlo
+box-sizing: border-box; y listo ahora si height y width son definitivos
+*/

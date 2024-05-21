@@ -1,0 +1,71 @@
+/*Esto es un comentario en css*/ 
+/*La estructura para estilar es la siguiente
+selector{
+propiedad : valor ;  } ,esta linea se llama declaracion*/ 
+
+/*Algunas propiedades tienen herencia y otras no*/
+              
+                h1{
+                /* color: blue; esta es la opcion clasica
+                otras opciones son: hexadecimal y rgba rgb para colores a para transparencia
+                en hexadecimal seria: color:#000000 o #09f que significa 0099ff para negro, lo pondre rgba para el h1*/
+                color: rgba(8, 24, 76, 0.913); 
+                /*si pinchas en el cuadradito de color puedes escogerlo como en paint*/
+                /*hay otras formas pero sinceramente no creo que dedicarme a colorear sea lo mio*/
+                border-style: solid;
+                border-width: 3px;
+                border-color: currentColor;
+                /*current color es el primer color que se la ha puesto a la etiqueta*/
+                /*importante ademas del borde existe outline son levemente diferentes pero tiene su gracia*/
+                
+             } /*Esto selecciona todas las etiquetas h1, lo digo por si tienes mas de una*/ 
+             
+             body{
+                 background-color:azure;
+                 /*transparent tambien es un color :)    */
+                 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                 font-size: 32px;
+             }
+     
+             /*clases*/
+             /*las clases se usan para agrupar elementos de un mismo tipo
+             y asi poder estilarlas juntas, aunque sean del mismo elemento
+             por ejemplo para editar todos los links de arriba (a) y que no se editen
+             los links de abajo crearemos una clase llamada link, y la pondremos en la etiqueta 
+             como si fuera el id, luego para editarlas se escribe en el estilo 
+             .clase {
+                 etc}
+                 */
+             .link{
+                 color:green;
+             }
+             .link:hover{
+                background-color: crimson;
+                /*la subclase o pseudoclase :hover permite cambiar las caracteristicas
+                cuando el puntero esta encima del elemento */
+             }
+             .link:active{
+                color: black;
+                /*active es para cuando se le da clic*/
+             }
+             /*si quieres referirte a un id seria
+             #id{
+                etc}
+                */
+             #experiencia{
+                 color:purple;
+             }
+
+            /*editar la lista, la pseudo clase first y last child permiten escoger los elementos*/
+             li{
+                color:aqua
+             }
+             li:first-child{
+                color: brown;
+             }
+             li:last-child{
+                color: coral;
+             }
+
+/*los selectores se pueden combinar por ejemplo .description .bold {etc}*/
+     
