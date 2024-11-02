@@ -1,0 +1,61 @@
+los elementos basicos de la poo son
+objetos
+mensajes
+metodos 
+clases
+
+los objetos son los elementos principales de construccion del programa
+
+Caracteristicas de la poo
+-abstraccion
+-herencia
+-polimorfismo
+
+abstraccion
+permite no preocuparse por detalles esenciales sino en generalizar/vision global
+nos podemos imaginar como que la formula de un cilindro es 
+efectivamente un cilindro
+
+la abstraccion y el encapsulamiento estan relacionados
+con la clases
+encapsular = no acceso a los componentes de los objetos
+
+ocultamiento -> publico y privado(solo para el metodo correspondiente)
+
+
+La clases //son parecidas a las funciones
+es una abstraccion de los datos como un tipo, está compuesta por
+atributos (indentificadores)
+o metodos que son las acciones
+
+
+herencia
+capacidad para crear nuevas clases de objetos que se constituyen con
+clases ya existentes, por tanto posee sus propiedades
+
+la clase que puede ser heredada se denomina  base superclase
+la que hereda es la clase derivada
+
+
+polimorfismos = multiples formas
+capacidad que tienen objetos similares para responder al mismo
+mensaje de diferentes formas
+
+UML es un lenguaje para representar diagramas de clases de forma gráfica
+
+atributos
+hay tres tipos de atributos, público (dentro del programa principal y métodos)
+
+Estructura general de una aplicacion en java
+
+import ... //importa libreria
+
+Metodos ; el equivalente a funciones
+
+public void fxsumar(//lista de parametros)
+{
+    Tsuma = A + B;
+}
+
+metodos matematicas
+Math.pow()  Math.sqrt()
